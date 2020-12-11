@@ -2,7 +2,7 @@
 
 ## Checkout these Stars
 
-<iframe style="width: 1280px; height: 800px; overflow: hidden; float:middle" src="starts/stars.html"></iframe>
+<iframe style="width: 1280px; height: 800px; overflow: hidden; float:middle" src="stars/stars.html"></iframe>
 
 ## Feel some sweet love with this heart
 
