@@ -187,7 +187,7 @@ var Module = typeof Module !== 'undefined' ? Module : {};
     }
   
    }
-   loadPackage({"files": [{"filename": "/assets/heart.frag", "start": 0, "end": 1399, "audio": 0}, {"filename": "/assets/simple.frag", "start": 1399, "end": 1505, "audio": 0}, {"filename": "/assets/simple.vert", "start": 1505, "end": 1609, "audio": 0}, {"filename": "/assets/stars.frag", "start": 1609, "end": 1943, "audio": 0}, {"filename": "/assets/stars.vert", "start": 1943, "end": 2358, "audio": 0}], "remote_package_size": 2358, "package_uuid": "3b336fca-6410-43db-b10e-2f90797afa6b"});
+   loadPackage({"files": [{"filename": "/assets/heart.frag", "start": 0, "end": 1354, "audio": 0}, {"filename": "/assets/simple.frag", "start": 1354, "end": 1460, "audio": 0}, {"filename": "/assets/simple.vert", "start": 1460, "end": 1564, "audio": 0}, {"filename": "/assets/stars.frag", "start": 1564, "end": 1886, "audio": 0}, {"filename": "/assets/stars.vert", "start": 1886, "end": 2287, "audio": 0}], "remote_package_size": 2287, "package_uuid": "4621138b-8459-49ca-9d7f-4acd5adc597c"});
   
   })();
   
