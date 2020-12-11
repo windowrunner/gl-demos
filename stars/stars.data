@@ -1,0 +1,36 @@
+precision mediump float;
+out vec4 FragColor;
+void main()
+{
+    FragColor = vec4(1.0f, 0.5f, 0.2f, 1.0f);
+}layout (location = 0) in vec3 aPos;
+void main()
+{
+    gl_Position = vec4(aPos.x, aPos.y, aPos.z, 1.0);
+}precision mediump float;
+
+const vec4 begin = vec4(0.1, 0.75, 1.0, 1.0);
+const vec4 end = vec4(1.0, 1.0, 1.0, 1.0);
+
+out vec4 FragColor;
+
+void main(void) {
+  vec2 pc = (gl_PointCoord - 0.5) * 2.0;
+  float dist = (1.0 - length(pc));
+  vec4 color = mix(begin, end, dist);
+  FragColor = vec4(dist, dist, dist, dist) * color;
+}precision mediump float;
+
+uniform mat4 model2View;
+uniform mat4 view2clip;
+
+layout (location = 0) in vec3 position;
+
+void main(void) {
+
+  vec4 camPosition = model2View * vec4(position, 1.0);
+  gl_Position = view2clip * camPosition;
+  float cameraDist = abs(camPosition.z);//length(camPosition.xyz);
+  cameraDist = clamp(cameraDist/2.0,0.0,1.0);
+  gl_PointSize = 12.0*(1.0 - pow(cameraDist,4.0))+3.0;
+}
